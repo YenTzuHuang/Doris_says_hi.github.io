@@ -1,17 +1,40 @@
-
 <!DOCTYPE html>
 <html>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S7CLB7EM74"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S7CLB7EM74');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7CLB7EM74"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
   
-<title>練習架網站</title>
+    gtag('config', 'G-S7CLB7EM74');
+
+    function c1(){alert('Hello C1 見A寫法');
+    gtag('event', 'click s1', {
+      'event_label': 's1',
+      'event_category': 'click'
+    });
+  }
+  function c2(){alert('Hello C2 B寫法');
+    gtag('event', 'click s2', {
+      'event_label': 's2',
+      'event_category': 'click'
+    });
+  }
+  function c3(){alert('Hello C3 B寫法');
+    gtag('event', 'click s3', {
+        'event_label': 's3',
+        'event_category': 'click'
+    });
+  }
+  function c4(){alert('Hello C4 B寫法');
+    gtag('event', 'click s4', {
+        'event_label': 's4',
+        'event_category': 'click'
+    });
+  }
+  </script>
+
+<title>首頁Food Main</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -46,23 +69,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
     <div class="w3-quarter">
       <img src="w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3><a href="sub/s1.html">The Perfect Sandwich, A Real NYC Classic</a></h3>
+      <h3><a href="sub/s1.html" onclick="alert('Hello123!!哈囉 A寫法');">The Perfect Sandwich, A Real NYC Classic</a></h3>
       <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
     <div class="w3-quarter">
       <img src="w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3><a href="sub/s2.html">Let Me Tell You About This Steak</a></h3>
+      <h3><a href="sub/s2.html" onclick="c2();">Let Me Tell You About This Steak</a></h3>
       <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
     <div class="w3-quarter">
       <img src="w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3><a href="sub/s3.html">Cherries, interrupted</a></h3>
+      <h3><a href="sub/s3.html" onclick="c3();">Cherries, interrupted</a></h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
       <p>What else?</p>
     </div>
     <div class="w3-quarter">
       <img src="w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3><a href="sub/s4.html">Once Again, Robust Wine and Vegetable Pasta</a></h3>
+      <h3><a href="sub/s4.html" onclick="c4();">Once Again, Robust Wine and Vegetable Pasta</a></h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
   </div>
